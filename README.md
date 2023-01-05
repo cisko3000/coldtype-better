@@ -7,6 +7,7 @@ Hello, this is a fork of coldtype but with better API names and docstrings so th
 
 # TODO
 * Update API names
+    * Clean up path.py
 * Update tests
 * Update documentation
 
