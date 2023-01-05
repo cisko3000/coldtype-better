@@ -2,6 +2,15 @@ __⚠️🌋 Disclaimer: this library is alpha-quality; the API is subject to ch
 
 ---
 
+# Coldtype Better
+Hello, this is a fork of coldtype but with better API names and docstrings so that you don't have to memorize method names. If you got an IDE with code completion then you're all set. The method names and descriptions will show up on hover.
+
+# TODO
+* Update API names
+* Update tests
+* Update documentation
+
+
 # Coldtype
 
 _Hello and welcome to `coldtype`, an odd little library for programmatic typography, written for use on [Goodhertz](https://goodhertz.com) projects and [text animations](https://vimeo.com/robstenson)._
