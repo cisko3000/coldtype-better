@@ -111,6 +111,28 @@ body {
     background-color: dodgerblue;
 }
 
+#socials {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+#socials ul {
+    display: flex;
+    flex-flow: wrap;
+}
+
+#socials ul li a {
+    display: block;
+    padding: 10px 10px 8px 10px;
+    color: dodgerblue;
+    text-decoration: none;
+    border-bottom: 2px solid #eee;
+}
+
+#socials ul li a:hover {
+    border-bottom: 2px solid dodgerblue;
+}
+
 #main {
     max-width: 650px;
     margin: auto auto;
@@ -120,12 +142,22 @@ body {
     padding: 20px;
 }
 
+ul.menu h3 {
+    font-family: "MDIO-Web", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul.menu ul {
+    padding: 0px 0 0 20px;
+}
+
 .post-link a {
     display: block;
     text-decoration: none;
-    color: dodgerblue;
-    /* padding: 10px; */
-    border-left: 2px solid dodgerblue;
+    padding-bottom: 4px;
 }
 
 .post-link a h2 {
@@ -133,6 +165,8 @@ body {
     padding: 2px 5px 2px 10px;
     font-family: "MDIO-Web";
     font-weight: 800;
+    color: dodgerblue;
+    border-left: 2px solid dodgerblue;
 }
 
 .post-link a:hover h2 {
@@ -233,6 +267,8 @@ a.colab-link:hover {
 hr {
     border: none;
     border-bottom: 1px solid #eee;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* .post iframe {
@@ -245,6 +281,10 @@ hr {
     font-style: italic;
     color: #555;
     margin-bottom: 200px;
+}
+
+.code.no-output {
+    margin-bottom: 30px;
 }
 
 .code-outputs {
@@ -272,6 +312,10 @@ hr {
     /* border-bottom: 1px solid #ccc; */
 }
 
+.text {
+    margin-top: 60px;
+}
+
 .text pre {
     margin-bottom: 20px;
     border-top: 1px solid #ccc;
@@ -292,7 +336,7 @@ hr {
     margin-bottom: 0px;
     background: whitesmoke;
     border: 1px solid #ccc;
-    border-bottom: none;
+    /* border-bottom: none; */
 }
 
 .highlight .hll { background-color: #ffffcc }

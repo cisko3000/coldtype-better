@@ -4,11 +4,34 @@ from coldtype.notebook.parser import NotebookParser
 root = Path(__FILE__).parent
 
 build_dir = root / "site"
-notebook_dir = root / "tutorials"
+notebook_dir = root / "notebooks"
 templates_dir = root / "templates"
 assets_dir = root / "assets"
 
-NotebookParser(notebook_dir, build_dir, templates_dir, assets_dir)
+NotebookParser(notebook_dir, build_dir, templates_dir, assets_dir, do_nest=True, sort={
+    None: [
+        "introduction",
+        "about",
+        "overview",
+        "install",
+        "tutorials",
+        "cheatsheets",
+    ],
+    "tutorials": [
+        "shapes",
+        "geometry",
+        "text",
+        "animation",
+        "drawbot",
+    ],
+    "cheatsheets": [
+        "viewer",
+        "easing",
+        "rectangles",
+        "oneletter",
+        "text",
+    ]
+})
 
 @renderable((100, 100), watch=[
     assets_dir/"style.css",
