@@ -1,4 +1,4 @@
-import setuptools
+import setuptools, sys
 
 long_description = """
 # Coldtype
@@ -8,9 +8,25 @@ long_description = """
 More info available at: [coldtype.goodhertz.com](https://coldtype.goodhertz.com)
 """
 
+basic_deps = [
+    "blackrenderer>=0.6.0",
+    "fonttools[ufo,unicode]",
+    "fontPens",
+    "easing-functions",
+    "mido",
+    "defcon",
+    "freetype-py",
+    "uharfbuzz>=0.14.0",
+    "python-bidi",
+    "requests"
+]
+
+#if sys.platform.startswith("darwin"):
+#    basic_deps.extend(["pyobjc-framework-Cocoa", "pyobjc-framework-CoreText"])
+
 setuptools.setup(
     name="coldtype",
-    version="0.10.0",
+    version="0.10.1",
     author="Rob Stenson / Goodhertz",
     author_email="rob@goodhertz.com",
     description="Functions for manual vectorized typesetting",
@@ -22,18 +38,18 @@ setuptools.setup(
         "coldtype",
         "coldtype.fx",
         "coldtype.img",
-        "coldtype.time",
         "coldtype.midi",
         "coldtype.pens",
         "coldtype.text",
         "coldtype.grid",
         "coldtype.color",
         "coldtype.runon",
+        "coldtype.timing",
         "coldtype.physics",
         "coldtype.capture",
         "coldtype.blender",
         "coldtype.geometry",
-        "coldtype.time.nle",
+        "coldtype.timing.nle",
         "coldtype.notebook",
         "coldtype.renderer",
         "coldtype.text.colr",
@@ -112,17 +128,7 @@ setuptools.setup(
             "soundfile",
         ]
     },
-    install_requires=[
-        "fonttools[ufo]",
-        "blackrenderer>=0.6.0",
-        "fontPens",
-        "easing-functions",
-        "mido",
-        "defcon",
-        "freetype-py",
-        "uharfbuzz>=0.14.0",
-        "python-bidi",
-    ],
+    install_requires=basic_deps,
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",

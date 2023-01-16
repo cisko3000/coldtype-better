@@ -14,8 +14,8 @@ from coldtype.renderer.config import ColdtypeConfig
 from coldtype.helpers import sibling
 from coldtype.text.reader import ALL_FONT_DIRS
 from coldtype.geometry.rect import Rect
-from coldtype.time import Timeline
-from coldtype.time.viewer import timeViewer
+from coldtype.timing import Timeline
+from coldtype.timing.viewer import timeViewer
 
 try:
     from docutils.core import publish_doctree
@@ -415,7 +415,7 @@ class SourceReader():
         self.config.args = args
         #print(self.config.values())
     
-    def find_sources(self, dirpath, recursive=True):
+    def find_sources(self, dirpath, recursive=False):
         prefix = "**/" if recursive else ""
         globber = f"{prefix}*.py"
         if self.filepath:
