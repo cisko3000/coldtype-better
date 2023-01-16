@@ -3,13 +3,15 @@ __⚠️🌋 Disclaimer: this library is alpha-quality; the API is subject to ch
 ---
 
 # Coldtype Better
-Hello, this is a fork of coldtype but with better API names and docstrings so that you don't have to memorize method names. If you got an IDE with code completion then you're all set. The method names and descriptions will show up on hover.
+~~Hello, this is a fork of coldtype but with better API names and docstrings so that you don't have to memorize method names. If you got an IDE with code completion then you're all set. The method names and descriptions will show up on hover.~~
+
+Changed my mind and will instead use coldtype as a dependency for building a framework that makes words move to the beat of a midi file.
 
 # TODO
-* Update API names
-    * Clean up path.py
-* Update tests
-* Update documentation
+~~* Update API names~~
+~~    * Clean up path.py~~
+~~* Update tests~~
+~~* Update documentation~~
 
 
 # Coldtype
